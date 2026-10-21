@@ -163,7 +163,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       : (_currentUser != null &&
                                 _currentUser!.firstName.isNotEmpty
                             ? _currentUser!.firstName
-                            : 'Emily'),
+                            : (_currentUser != null &&
+                                      _currentUser!.username.isNotEmpty
+                                  ? _currentUser!.username
+                                  : 'Profile')),
                   fontSize: 20.sp,
                   fontWeight: FontWeight.bold,
                   color: (_selectedIndex == 1 || _selectedIndex == 2)
@@ -206,7 +209,10 @@ class _HomeScreenState extends State<HomeScreen> {
             // Tab 1: Cart Screen (Enhancement 1 & 3)
             const CartScreen(isStandalone: false),
             // Tab 2: Profile Screen (Enhancement 3)
-            ProfileScreen(initialUser: _currentUser),
+            ProfileScreen(
+              initialUser: _currentUser,
+              onUserUpdated: _initUserData,
+            ),
           ],
         ),
         // --------------------------------------------------------------

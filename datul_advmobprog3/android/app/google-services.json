@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "232334740881",
+    "project_id": "advmobprog-firebase-66f47",
+    "storage_bucket": "advmobprog-firebase-66f47.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232334740881:android:d838e24393903df50c9e30",
+        "android_client_info": {
+          "package_name": "com.example.datul_advmobprog3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATabfbifKsJYgqUP0Hrp9f5Y2LM6_msNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
